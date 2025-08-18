@@ -1,1 +1,1 @@
-wofi --show drun --style ~/.config/fabarch/wofi/style.css --conf ~/.config/fabarch/wofi/config
+wofi --style ~/.config/fabarch/wofi/style.css --conf ~/.config/fabarch/wofi/config
