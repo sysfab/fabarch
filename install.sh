@@ -24,11 +24,11 @@ sudo pacman -S otf-font-awesome noto-fonts noto-fonts-cjk noto-fonts-emoji noto-
 
 echo "Copying config files..."
 mkdir -p $HOME/.config/fabarch
-mv $HOME/fabarch/content $HOME/.config/fabarch
+sudo cp -rv $HOME/fabarch/content/* $HOME/.config/fabarch/
 
 echo "Applying config..."
 mkdir -p ~/.config/hypr
-mv $HOME/fabarch/hyprland-install.conf $HOME/.config/hypr/hyprland.conf
+cp $HOME/fabarch/hyprland-install.conf $HOME/.config/hypr/hyprland.conf
 
 echo "Launching visual install..."
 Hyprland

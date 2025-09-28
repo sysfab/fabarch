@@ -36,13 +36,13 @@ bash $HOME/fabarch/create_hyprpaper_config.sh
 
 echo "Setting up hyprland start on login..."
 sudo systemctl set-default multi-user.target
-sudo mv $HOME/fabarch/.bash_profile $HOME/.bash_profile
+sudo cp $HOME/fabarch/.bash_profile $HOME/.bash_profile
 
 echo "Applying .bashrc..."
-sudo mv $HOME/fabarch/.bashrc $HOME/.bashrc
+sudo cp $HOME/fabarch/.bashrc $HOME/.bashrc
 
 echo "Applying default config..."
-mv $HOME/fabarch/hyprland-final.conf $HOME/.config/hypr/hyprland.conf
+sudo cp $HOME/fabarch/hyprland-final.conf $HOME/.config/hypr/hyprland.conf
 
 echo "Done! Restarting..."
 sudo shutdown -r now
