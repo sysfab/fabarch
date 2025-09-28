@@ -24,7 +24,7 @@ sudo pacman -S otf-font-awesome noto-fonts noto-fonts-cjk noto-fonts-emoji noto-
 
 echo "Copying config files..."
 mkdir -p $HOME/.config/fabarch
-sudo cp -rv $HOME/fabarch/content/* $HOME/.config/fabarch/
+sudo cp -rv $HOME/fabarch/contents/* $HOME/.config/fabarch/
 
 echo "Applying config..."
 mkdir -p ~/.config/hypr
